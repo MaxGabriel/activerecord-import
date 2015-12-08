@@ -3,5 +3,5 @@ class Widget < ActiveRecord::Base
 
   default_scope lambda { where(active: true) }
 
-  serialize :data, Hash
+  serialize :data, JSON
 end
